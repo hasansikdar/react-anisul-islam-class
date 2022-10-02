@@ -1,29 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
 import { useEffect, useState } from 'react';
-
+import Card1 from './Components/Card/Card1';
+import Card2 from './Components/Card/Card2';
+import ClassComponent from './Components/Card/ClassComponent';
+import Card3 from './Components/Card/Card3';
+import Card4 from './Components/Card/Card4';
+import Card5 from './Components/Card/Card5';
+import Card6 from './Components/Card/Card6';
 function App() {
-  const [users, setUsers] = useState([]);
-  useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/users')
-    .then(res => res.json())
-    .then(data => setUsers(data));
-  }, [])
   
   return (
     <div className="App">
-      {
-        users.map((user, index) => {
-          const {name, email, phone, website} = user;
-          console.log(user);
-          return <div key={index} className="user">
-            <h3>{name}</h3>
-            <p>Email: {email}</p>
-            <p>Phone: {phone}</p>
-            <p>Website: <a target="_blank" href={`http://${website}`}>{website}</a></p>
-          </div> 
-        })
-      }
+        <Card1></Card1>
+        <Card2></Card2>
+        <ClassComponent></ClassComponent>
+        <Card3></Card3>
+        <Card4></Card4>
+        <Card5></Card5>
+        <Card6></Card6>
     </div>
   );
 }
