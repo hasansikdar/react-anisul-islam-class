@@ -1,10 +1,10 @@
 import React from 'react';
-import Index from './Component/Conditional rendering/Index';
+import Onchanged from './Component/Onchanged/Onchanged';
 
 const App = () => {
   return (
     <div>
-      <Index></Index>
+      <Onchanged />
     </div>
   );
 };
