@@ -1,11 +1,10 @@
 import React from 'react';
-import Bootstrap from './Component/bootstrap/Bootstrap';
-import CarouselItem from './Component/bootstrap/Carousel/Carousel';
+import Index from './Component/Conditional rendering/Index';
+
 const App = () => {
   return (
     <div>
-      <Bootstrap />
-      <CarouselItem></CarouselItem>
+      <Index></Index>
     </div>
   );
 };

@@ -1,0 +1,21 @@
+.count button {
+    background:green;
+    border:1px solid black;
+    outline:none;
+    color:white;
+    padding:8px 20px;
+    margin:10px;
+    font-size:23px;
+    border-radius:10px;
+}
+.count {
+    border:1px solid black;
+    box-shadow:0px 5px 5px gray;
+    padding:10px;
+    border-radius:10px;
+    width:50%;
+    margin:auto;
+}
+.disabled {
+    background:red;
+}
