@@ -9,16 +9,16 @@ class Onchanged extends Component {
       }
     }
 
-    handleOnchanged = (e) => {
-        this.setState({
-            onchangedValue: e.target.value
-        });
+    handleText = (e) => {
+       this.setState({
+        onchangedValue: e.target.value
+       })
     }
+
     render() {
-         
         return (
             <div>
-                <input type="text" onChange={this.handleOnchanged} />
+                <input type="text"  onChange={this.handleText}  />
                 <p>{this.state.onchangedValue}</p>
             </div>
         );

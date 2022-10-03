@@ -1,10 +1,11 @@
 import React from 'react';
-import Onchanged from './Component/Onchanged/Onchanged';
-
+import DynamicStyle from './Component/Dynamic style/DynamicStyle';
+import './App.css'
 const App = () => {
+  let color = false;
   return (
     <div>
-      <Onchanged />
+      <DynamicStyle />
     </div>
   );
 };
